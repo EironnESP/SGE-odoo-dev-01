@@ -9,5 +9,6 @@ class Carrera(models.Model):
     name = fields.Char(string='Nombre', required=True, help="Introduce el nombre de la carrera (ej. 6ª de la tarde)")
     fecha = fields.Date(string='Fecha', required=True, help="Introduce la fecha en la que se realiza la carrera")
     num_competidores = fields.Integer(string='Número de competidores', help="Introduce el número de competidores que participan")
-    karts_participando = fields.Many2many('alc_karting.kart', string='Karts participando en esta carrera')
-    competidores_participando = fields.Many2many('alc_karting.competidor', string='Competidores participando en esta carrera')
+    num_vueltas = fields.Integer(string='Número de vueltas', help="Introduce el número de vueltas")
+    karts_ids = fields.Many2many('alc_karting.kart', string='Karts participando en esta carrera')
+    competidores_ids = fields.Many2many('alc_karting.competidor', string='Competidores participando en esta carrera')

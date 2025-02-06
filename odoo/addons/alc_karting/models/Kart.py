@@ -15,5 +15,5 @@ class Kart(models.Model):
         ('2', 'Gasolina 98'),
         ('3', 'Eléctrico'),
     ], string='Combustible recomendado', default='1')
-    carreras = fields.Many2many('alc_karting.carrera', string='Carreras en las que este kart participa')
+    carreras_ids = fields.Many2many('alc_karting.carrera', string='Carreras en las que este kart participa')
     nick_competidor = fields.Char(string='Nick del competidor', help='Introduce el nick del competidor asignado')

@@ -1,0 +1,37 @@
+<odoo>
+  <data>
+    <record id="alc_karting.carrera_form" model="ir.ui.view">
+      <field name="name">alc_karting.carrera.form</field>
+      <field name="model">alc_karting.carrera</field>
+      <field name="arch" type="xml">
+        <form string="Carrera">
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="fecha" />
+              <field name="num_competidores" />
+              <field name="num_vueltas" />
+              <field name="karts_ids" />
+              <field name="competidores_ids" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="alc_karting.carrera_tree" model="ir.ui.view">
+      <field name="name">alc_karting.carrera.tree</field>
+      <field name="model">alc_karting.carrera</field>
+      <field name="arch" type="xml">
+        <tree string="Carrera">
+          <field name="name" />
+              <field name="fecha" />
+              <field name="num_competidores" />
+              <field name="num_vueltas" />
+              <field name="karts_ids" />
+              <field name="competidores_ids" />
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>
