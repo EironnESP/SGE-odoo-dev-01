@@ -1,30 +1,59 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="alc_karting.alc_karting">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+        <record id="kart1" model="alc_karting.kart">
+            <field name="name">01</field>
+            <field name="caballos">15</field>
+            <field name="control_remoto">True</field>
+            <field name="combustible_recomendado">1</field>
+            <!--<field name="carreras_ids"> </field>-->
+            <field name="nick_competidor">xX_Manolo69_Xx</field>
+        </record>
 
-          <record id="object1" model="alc_karting.alc_karting">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+        <record id="kart2" model="alc_karting.kart">
+            <field name="name">07</field>
+            <field name="caballos">20</field>
+            <field name="control_remoto">True</field>
+            <field name="combustible_recomendado">2</field>
+            <!--<field name="carreras_ids"> </field>-->
+            <field name="nick_competidor">NanoFanNumberOne</field>
+        </record>
 
-          <record id="object2" model="alc_karting.alc_karting">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+        <record id="carrera1" model="alc_karting.carrera">
+            <field name="name">Carrera privada del nano fan club</field>
+            <field name="fecha">2025-03-01</field>
+            <field name="num_competidores">15</field>
+            <field name="num_vueltas">4</field>
+            <!--<field name="karts_ids"> </field>
+            <field name="competidores_ids"> </field>-->
+        </record>
 
-          <record id="object3" model="alc_karting.alc_karting">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+        <record id="equipo1" model="alc_karting.equipo">
+            <field name="name">El nano fan club</field>
+            <field name="fecha_creacion">2025-02-20</field>
+            <field name="num_victorias">6</field>
+            <!--<field name="competidores_ids"> </field>-->
+        </record>
 
-          <record id="object4" model="alc_karting.alc_karting">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
+        <record id="competidor1" model="alc_karting.competidor">
+            <field name="name">xX_Manolo69_Xx</field>
+            <field name="nombre">Manolo</field>
+            <field name="apellidos">Matamoros Gil</field>
+            <field name="num_carreras">26</field>
+            <!--<field name="equipo_id"></field>-->
+            <!--<field name="carreras_ids"> </field>-->
+            <field name="numero_kart">01</field>
+            <field name="foto" type="base64" file="alc_karting/static/img/g.jpg"/>
+        </record>
+
+        <record id="competidor2" model="alc_karting.competidor">
+            <field name="name">NanoFanNumberOne</field>
+            <field name="nombre">Paco</field>
+            <field name="apellidos">Pérez García</field>
+            <field name="num_carreras">33</field>
+            <!--<field name="equipo_id"></field>-->
+            <!--<field name="carreras_ids"> </field>-->
+            <field name="numero_kart">07</field>
+            <field name="foto" type="base64" file="alc_karting/static/img/elnano.gif"/>
+        </record>
     </data>
 </odoo>

@@ -26,11 +26,15 @@ circuito de karting
     'data': [
         # 'security/ir.model.access.csv',
         'views/carrera.xml',
-        'views/templates.xml',
+        'views/kart.xml',
+        'views/competidor.xml',
+        'views/equipo.xml',
+        'views/menus.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+    
+    'application': True,
 }
-

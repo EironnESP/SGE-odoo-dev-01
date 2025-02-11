@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+        <!-- menu root -->
+        <menuitem
+            id="alc_karting.root_menu"
+            name="Karting"
+            sequence="10"/> 
+
+        <!-- acciones -->
+        <record id="alc_karting.kart_action" model="ir.actions.act_window">
+            <field name="name">Karts</field>
+            <field name="res_model">alc_karting.kart</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="alc_karting.equipo_action" model="ir.actions.act_window">
+            <field name="name">Equipos</field>
+            <field name="res_model">alc_karting.equipo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="alc_karting.competidor_action" model="ir.actions.act_window">
+            <field name="name">Competidores</field>
+            <field name="res_model">alc_karting.competidor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="alc_karting.carrera_action" model="ir.actions.act_window">
+            <field name="name">Carreras</field>
+            <field name="res_model">alc_karting.carrera</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- menus -->
+        <menuitem
+            id="alc_karting.kart_menu"
+            name="Kart"
+            action="alc_karting.kart_action"
+            parent="alc_karting.root_menu"
+            sequence="10"/>    
+
+        <menuitem
+            id="alc_karting.equipo_menu"
+            name="Equipo"
+            action="alc_karting.equipo_action"
+            parent="alc_karting.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="alc_karting.competidor_menu"
+            name="Competidor"
+            action="alc_karting.competidor_action"
+            parent="alc_karting.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="alc_karting.carrera_menu"
+            name="Carrera"
+            action="alc_karting.carrera_action"
+            parent="alc_karting.root_menu"
+            sequence="10"/>
+    </data>    
+</odoo>
