@@ -11,7 +11,14 @@
               <field name="caballos" />
               <field name="control_remoto" />
               <field name="combustible_recomendado" />
-              <field name="carreras_ids" />
+              <field name="carreras_ids">
+                <tree string="Carrera">
+                  <field name="name" />
+                  <field name="fecha" />
+                  <field name="num_competidores" />
+                  <field name="num_vueltas" />
+                </tree>
+              </field>
               <field name="nick_competidor" />
             </group>
           </sheet>
@@ -25,11 +32,11 @@
       <field name="arch" type="xml">
         <tree string="Kart">
           <field name="name" />
-              <field name="caballos" />
-              <field name="control_remoto" />
-              <field name="combustible_recomendado" />
-              <field name="carreras_ids" />
-              <field name="nick_competidor" />
+          <field name="caballos" />
+          <field name="control_remoto" />
+          <field name="combustible_recomendado" />
+          <field name="carreras_ids" />
+          <field name="nick_competidor" />
         </tree>
       </field>
     </record>

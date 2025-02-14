@@ -1,2 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_alc_karting_alc_karting,alc_karting.alc_karting,model_alc_karting_alc_karting,base.group_user,1,1,1,1
+access_alc_karting_kart_users,alc_karting.kart_users,model_alc_karting_kart,base.group_user,1,1,1,0
+access_alc_karting_competidor_users,alc_karting.competidor_users,model_alc_karting_competidor,base.group_user,1,1,1,0
+access_alc_karting_equipo_users,alc_karting.equipo_users,model_alc_karting_equipo,base.group_user,1,1,1,0
+access_alc_karting_carrera_users,alc_karting.carrera_users,model_alc_karting_carrera,base.group_user,1,1,1,0
+access_alc_karting_kart_users,alc_karting.kart_users,model_alc_karting_kart,base.group_system,1,1,1,1
+access_alc_karting_competidor_users,alc_karting.competidor_users,model_alc_karting_competidor,base.group_system,1,1,1,1
+access_alc_karting_equipo_users,alc_karting.equipo_users,model_alc_karting_equipo,base.group_system,1,1,1,1
+access_alc_karting_carrera_users,alc_karting.carrera_users,model_alc_karting_carrera,base.group_system,1,1,1,1

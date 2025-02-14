@@ -10,7 +10,14 @@
               <field name="name" />
               <field name="fecha_creacion" />
               <field name="num_victorias" />
-              <field name="competidores_ids" />
+              <field name="competidores_ids" >
+                <tree string="Competidor">
+                  <field name="name" />
+                  <field name="nombre" />
+                  <field name="apellidos" />
+                  <field name="equipo_id" />
+                </tree>
+              </field>
             </group>
           </sheet>
         </form>

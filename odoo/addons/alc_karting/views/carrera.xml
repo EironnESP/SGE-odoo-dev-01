@@ -11,8 +11,23 @@
               <field name="fecha" />
               <field name="num_competidores" />
               <field name="num_vueltas" />
-              <field name="karts_ids" />
-              <field name="competidores_ids" />
+              <field name="karts_ids">
+                <tree string="Kart">
+                  <field name="name" />
+                  <field name="caballos" />
+                  <field name="control_remoto" />
+                  <field name="nick_competidor" />
+                </tree>
+              </field>
+              <field name="competidores_ids">
+                <tree string="Competidor">
+                  <field name="name" />
+                  <field name="nombre" />
+                  <field name="apellidos" />
+                  <field name="equipo_id" />
+                  <field name="numero_kart" />
+                </tree>
+              </field>
             </group>
           </sheet>
         </form>
@@ -25,11 +40,11 @@
       <field name="arch" type="xml">
         <tree string="Carrera">
           <field name="name" />
-              <field name="fecha" />
-              <field name="num_competidores" />
-              <field name="num_vueltas" />
-              <field name="karts_ids" />
-              <field name="competidores_ids" />
+          <field name="fecha" />
+          <field name="num_competidores" />
+          <field name="num_vueltas" />
+          <field name="karts_ids" />
+          <field name="competidores_ids" />
         </tree>
       </field>
     </record>

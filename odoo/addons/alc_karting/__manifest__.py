@@ -24,7 +24,7 @@ circuito de karting
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/carrera.xml',
         'views/kart.xml',
         'views/competidor.xml',

@@ -12,7 +12,14 @@
               <field name="apellidos" />
               <field name="num_carreras" />
               <field name="equipo_id" />
-              <field name="carreras_ids" />
+              <field name="carreras_ids">
+                <tree string="Carrera">
+                  <field name="name" />
+                  <field name="fecha" />
+                  <field name="num_competidores" />
+                  <field name="num_vueltas" />
+                </tree>
+              </field>
               <field name="numero_kart" />
               <field name="foto" widget="image" class="oe_right oe_avatar" options="{'size':[265,300]}"/>
             </group>
@@ -26,14 +33,14 @@
       <field name="model">alc_karting.competidor</field>
       <field name="arch" type="xml">
         <tree string="Competidor">
-              <field name="name" />
-              <field name="nombre" />
-              <field name="apellidos" />
-              <field name="num_carreras" />
-              <field name="equipo_id" />
-              <field name="carreras_ids" />
-              <field name="numero_kart" />
-              <field name="foto" widget="image" class="oe_right oe_avatar" options="{'size':[265,300]}"/>
+          <field name="name" />
+          <field name="nombre" />
+          <field name="apellidos" />
+          <field name="num_carreras" />
+          <field name="equipo_id" />
+          <field name="carreras_ids" />
+          <field name="numero_kart" />
+          <field name="foto" widget="image" class="oe_right oe_avatar" options="{'size':[265,300]}"/>
         </tree>
       </field>
     </record>
