@@ -1,0 +1,19 @@
+<odoo>
+    <record id="Karting_id" model="ir.module.category">
+        <field name="name">Karting</field>
+        <field name="description">Gestión de una pista de karts</field>
+    </record>	
+	<record id="alc_karting_user" model="res.groups">
+	    <field name="name">Usuario</field>
+        <field name="comment">Grupo que utiliza el módulo de karting</field>
+        <field name="category_id" ref="Karting_id"/>        
+        <field name="users" eval="[(4,ref('base.group_user'))]"></field>
+	</record>
+    <record id="alc_karting_admin" model="res.groups">
+    	<field name="name">Administrador</field>
+    	<field name="comment">Grupo que administra todo lo relacionado con el módulo de Karting</field>
+        <field name="category_id" ref="Karting_id"/>
+        <field name="implied_ids" eval="[(4,ref('alc_karting_user'))]"/>
+        <field name="users" eval="[(4,ref('base.user_root')),(4,ref('base.user_admin'))]"></field>	
+    </record>
+</odoo>

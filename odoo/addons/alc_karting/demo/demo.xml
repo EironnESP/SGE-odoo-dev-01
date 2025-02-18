@@ -1,11 +1,31 @@
 <odoo>
-    <data>
+    <data>       
+        <record id="carrera1" model="alc_karting.carrera">
+            <field name="name">Carrera privada del nano fan club</field>
+            <field name="fecha">2025-03-01</field>
+            <field name="num_competidores">15</field>
+            <field name="num_vueltas">4</field>
+        </record>
+
+        <record id="carrera2" model="alc_karting.carrera">
+            <field name="name">Carrera larga del dia 2</field>
+            <field name="fecha">2025-03-02</field>
+            <field name="num_competidores">20</field>
+            <field name="num_vueltas">50</field>
+        </record>
+
+        <record id="equipo1" model="alc_karting.equipo">
+            <field name="name">El nano fan club</field>
+            <field name="fecha_creacion">2025-02-20</field>
+            <field name="num_victorias">6</field>
+        </record>
+
         <record id="kart1" model="alc_karting.kart">
             <field name="name">01</field>
             <field name="caballos">15</field>
             <field name="control_remoto">True</field>
             <field name="combustible_recomendado">1</field>
-            <!--<field name="carreras_ids"> </field>-->
+            <field name="carreras_ids" eval="[(6, 0, [ref('carrera1'),ref('carrera2')])]"/>
             <field name="nick_competidor">xX_Manolo69_Xx</field>
         </record>
 
@@ -14,24 +34,8 @@
             <field name="caballos">20</field>
             <field name="control_remoto">True</field>
             <field name="combustible_recomendado">2</field>
-            <!--<field name="carreras_ids"> </field>-->
+            <field name="carreras_ids" eval="[(6, 0, [ref('carrera1'),ref('carrera2')])]"/>
             <field name="nick_competidor">NanoFanNumberOne</field>
-        </record>
-
-        <record id="carrera1" model="alc_karting.carrera">
-            <field name="name">Carrera privada del nano fan club</field>
-            <field name="fecha">2025-03-01</field>
-            <field name="num_competidores">15</field>
-            <field name="num_vueltas">4</field>
-            <!--<field name="karts_ids"> </field>
-            <field name="competidores_ids"> </field>-->
-        </record>
-
-        <record id="equipo1" model="alc_karting.equipo">
-            <field name="name">El nano fan club</field>
-            <field name="fecha_creacion">2025-02-20</field>
-            <field name="num_victorias">6</field>
-            <!--<field name="competidores_ids"> </field>-->
         </record>
 
         <record id="competidor1" model="alc_karting.competidor">
@@ -39,8 +43,8 @@
             <field name="nombre">Manolo</field>
             <field name="apellidos">Matamoros Gil</field>
             <field name="num_carreras">26</field>
-            <!--<field name="equipo_id"></field>-->
-            <!--<field name="carreras_ids"> </field>-->
+            <field name="equipo_id" ref="equipo1"/>
+            <field name="carreras_ids" eval="[(6, 0, [ref('carrera1'),ref('carrera2')])]"/>
             <field name="numero_kart">01</field>
             <field name="foto" type="base64" file="alc_karting/static/img/g.jpg"/>
         </record>
@@ -50,8 +54,8 @@
             <field name="nombre">Paco</field>
             <field name="apellidos">Pérez García</field>
             <field name="num_carreras">33</field>
-            <!--<field name="equipo_id"></field>-->
-            <!--<field name="carreras_ids"> </field>-->
+            <field name="equipo_id" ref="equipo1"/>
+            <field name="carreras_ids" eval="[(6, 0, [ref('carrera1'),ref('carrera2')])]"/>
             <field name="numero_kart">07</field>
             <field name="foto" type="base64" file="alc_karting/static/img/elnano.gif"/>
         </record>

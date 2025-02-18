@@ -21,7 +21,7 @@
                 </tree>
               </field>
               <field name="numero_kart" />
-              <field name="foto" widget="image" class="oe_right oe_avatar" options="{'size':[265,300]}"/>
+              <field name="foto" widget="image" class="oe_right oe_avatar" options="{'size':[200,200]}"/>
             </group>
           </sheet>
         </form>
