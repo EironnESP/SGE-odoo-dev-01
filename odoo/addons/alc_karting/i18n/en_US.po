@@ -1,0 +1,365 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* alc_karting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20241017\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-20 09:27+0000\n"
+"PO-Revision-Date: 2025-02-20 09:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: alc_karting
+#: model:res.groups,name:alc_karting.alc_karting_admin
+msgid "Administrador"
+msgstr "Administrator"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__apellidos
+msgid "Apellidos"
+msgstr "Surname"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__caballos
+msgid "Caballos"
+msgstr "Horsepower"
+
+#. module: alc_karting
+#: model:ir.model,name:alc_karting.model_alc_karting_carrera
+#: model:ir.ui.menu,name:alc_karting.carrera_menu
+#: model_terms:ir.ui.view,arch_db:alc_karting.carrera_form
+#: model_terms:ir.ui.view,arch_db:alc_karting.carrera_tree
+#: model_terms:ir.ui.view,arch_db:alc_karting.competidor_form
+#: model_terms:ir.ui.view,arch_db:alc_karting.kart_form
+msgid "Carrera"
+msgstr "Race"
+
+#. module: alc_karting
+#: model:ir.actions.act_window,name:alc_karting.carrera_action
+msgid "Carreras"
+msgstr "Races"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__carreras_ids
+msgid "Carreras en las que este kart participa"
+msgstr "Races in which this kart participates"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__carreras_ids
+msgid "Carreras en las que ha participado o participará"
+msgstr "Races in which has participated or will participate"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__combustible_recomendado
+msgid "Combustible recomendado"
+msgstr "Recommended fuel"
+
+#. module: alc_karting
+#: model:ir.model,name:alc_karting.model_alc_karting_competidor
+#: model:ir.ui.menu,name:alc_karting.competidor_menu
+#: model_terms:ir.ui.view,arch_db:alc_karting.carrera_form
+#: model_terms:ir.ui.view,arch_db:alc_karting.competidor_form
+#: model_terms:ir.ui.view,arch_db:alc_karting.competidor_tree
+#: model_terms:ir.ui.view,arch_db:alc_karting.equipo_form
+msgid "Competidor"
+msgstr "Competitor"
+
+#. module: alc_karting
+#: model:ir.actions.act_window,name:alc_karting.competidor_action
+msgid "Competidores"
+msgstr "Competitors"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__competidores_ids
+msgid "Competidores participando en esta carrera"
+msgstr "Competitors participating in this race"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__control_remoto
+msgid "Control remoto"
+msgstr "Remote control"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__create_uid
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__create_uid
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__create_uid
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__create_date
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__create_date
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__create_date
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__display_name
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__display_name
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__display_name
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__display_name
+msgid "Display Name"
+msgstr "Display name"
+
+#. module: alc_karting
+#: model:ir.model.fields.selection,name:alc_karting.selection__alc_karting_kart__combustible_recomendado__0
+msgid "Diésel"
+msgstr "Diesel"
+
+#. module: alc_karting
+#: model:ir.model.fields.selection,name:alc_karting.selection__alc_karting_kart__combustible_recomendado__3
+msgid "Eléctrico"
+msgstr "Electric"
+
+#. module: alc_karting
+#: model:ir.model,name:alc_karting.model_alc_karting_equipo
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__equipo_id
+#: model:ir.ui.menu,name:alc_karting.equipo_menu
+#: model_terms:ir.ui.view,arch_db:alc_karting.equipo_form
+#: model_terms:ir.ui.view,arch_db:alc_karting.equipo_tree
+msgid "Equipo"
+msgstr "Team"
+
+#. module: alc_karting
+#: model:ir.actions.act_window,name:alc_karting.equipo_action
+msgid "Equipos"
+msgstr "Teams"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__fecha
+msgid "Fecha"
+msgstr "Date"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__fecha_creacion
+msgid "Fecha de creación"
+msgstr "Creation date"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__foto
+msgid "Foto"
+msgstr "Photo"
+
+#. module: alc_karting
+#: model:ir.model.fields.selection,name:alc_karting.selection__alc_karting_kart__combustible_recomendado__1
+msgid "Gasolina 95"
+msgstr "Gasoline 95"
+
+#. module: alc_karting
+#: model:ir.model.fields.selection,name:alc_karting.selection__alc_karting_kart__combustible_recomendado__2
+msgid "Gasolina 98"
+msgstr "Gasoline 98"
+
+#. module: alc_karting
+#: model:ir.module.category,description:alc_karting.Karting_id
+msgid "Gestión de una pista de karts"
+msgstr "Kart race track management"
+
+#. module: alc_karting
+#: model:res.groups,comment:alc_karting.alc_karting_admin
+msgid "Grupo que administra todo lo relacionado con el módulo de Karting"
+msgstr "Karting management group"
+
+#. module: alc_karting
+#: model:res.groups,comment:alc_karting.alc_karting_user
+msgid "Grupo que utiliza el módulo de karting"
+msgstr "Karting user group"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__id
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__id
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__id
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__id
+msgid "ID"
+msgstr "ID"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_kart__control_remoto
+msgid "Indica si el kart permite ser controlado de forma remota"
+msgstr "Indicate if the kart can be controlled remotely"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_kart__nick_competidor
+msgid "Introduce el nick del competidor asignado"
+msgstr "Introduce the assigned competitor's nick"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_competidor__name
+msgid "Introduce el nick del corredor"
+msgstr "Introduce the assigned competitor's name"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_carrera__name
+msgid "Introduce el nombre de la carrera (ej. 6ª de la tarde)"
+msgstr "Introduce the race's name"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_competidor__nombre
+msgid "Introduce el nombre del corredor"
+msgstr "Introduce the competitor's name"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_equipo__name
+msgid "Introduce el nombre del equipo"
+msgstr "Introduce the team's name"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_kart__caballos
+msgid "Introduce el número de caballos del motor"
+msgstr "Introduce the engine horsepower"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_competidor__num_carreras
+msgid "Introduce el número de carreras en las que ha participado"
+msgstr "Introduce the number of races in which has participated"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_equipo__num_victorias
+msgid "Introduce el número de victorias que ha conseguido este equipo"
+msgstr "Introduce the number of victories this team has achieved"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_carrera__num_vueltas
+msgid "Introduce el número de vueltas"
+msgstr "Introduce the lap count"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_competidor__numero_kart
+msgid "Introduce el número del kart asignado"
+msgstr "Introduce the assigned kart number"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_carrera__num_competidores
+msgid "Introduce el número máximo de competidores que participan"
+msgstr "Introduce the maximum number of competitors that can take part"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_kart__name
+msgid "Introduce el número que el kart lleva inscrito, 0s incluidos"
+msgstr "Introduce the kart number, including zeroes"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_equipo__fecha_creacion
+msgid "Introduce la fecha en la que se ha creado el equipo"
+msgstr "Introduce the team creation date"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_carrera__fecha
+msgid "Introduce la fecha en la que se realiza la carrera"
+msgstr "Introduce the race date"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_competidor__apellidos
+msgid "Introduce los apellidos del corredor"
+msgstr "Introduce the competitor's surname"
+
+#. module: alc_karting
+#: model:ir.model,name:alc_karting.model_alc_karting_kart
+#: model:ir.ui.menu,name:alc_karting.kart_menu
+#: model_terms:ir.ui.view,arch_db:alc_karting.carrera_form
+#: model_terms:ir.ui.view,arch_db:alc_karting.kart_form
+#: model_terms:ir.ui.view,arch_db:alc_karting.kart_tree
+msgid "Kart"
+msgstr "Kart"
+
+#. module: alc_karting
+#: model:ir.module.category,name:alc_karting.Karting_id
+#: model:ir.ui.menu,name:alc_karting.root_menu
+msgid "Karting"
+msgstr "Karting"
+
+#. module: alc_karting
+#: model:ir.actions.act_window,name:alc_karting.kart_action
+msgid "Karts"
+msgstr "Karts"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__karts_ids
+msgid "Karts participando en esta carrera"
+msgstr "Karts participating in this race"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__write_uid
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__write_uid
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__write_uid
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__write_date
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__write_date
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__write_date
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__competidores_ids
+msgid "Lista de competidores"
+msgstr "Competitor list"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__name
+msgid "Nick"
+msgstr "Nick"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__nick_competidor
+msgid "Nick del competidor"
+msgstr "Competitor nick"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__name
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__nombre
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__name
+msgid "Nombre"
+msgstr "Name"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_kart__name
+msgid "Número"
+msgstr "Number"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__num_carreras
+msgid "Número de carreras"
+msgstr "Race count"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_equipo__num_victorias
+msgid "Número de victorias"
+msgstr "Victory count"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__num_vueltas
+msgid "Número de vueltas"
+msgstr "Lap count"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_competidor__numero_kart
+msgid "Número del kart"
+msgstr "Kart number"
+
+#. module: alc_karting
+#: model:ir.model.fields,field_description:alc_karting.field_alc_karting_carrera__num_competidores
+msgid "Número máximo de competidores"
+msgstr "Maximum competitor count"
+
+#. module: alc_karting
+#: model:ir.model.fields,help:alc_karting.field_alc_karting_competidor__foto
+msgid "Selecciona la foto del competidor"
+msgstr "Choose the competitor's photo"
+
+#. module: alc_karting
+#: model:res.groups,name:alc_karting.alc_karting_user
+msgid "Usuario"
+msgstr "User"

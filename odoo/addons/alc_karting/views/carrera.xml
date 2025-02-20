@@ -48,5 +48,20 @@
         </tree>
       </field>
     </record>
+
+    <record id="alc_karting.carrera_calendar" model="ir.ui.view">
+      <field name="name">alc_karting.carrera.calendar</field>
+      <field name="model">alc_karting.carrera</field>
+      <field name="arch" type="xml">
+        <calendar date_start="fecha" string="Carrera" mode="year" event_open_popup="true" date_stop="fecha">
+          <field name="name" />
+          <field name="fecha" />
+          <field name="num_competidores" />
+          <field name="num_vueltas" />
+          <field name="karts_ids" />
+          <field name="competidores_ids" />
+        </calendar>
+      </field>
+    </record>
   </data>
 </odoo>

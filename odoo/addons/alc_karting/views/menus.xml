@@ -29,7 +29,7 @@
         <record id="alc_karting.carrera_action" model="ir.actions.act_window">
             <field name="name">Carreras</field>
             <field name="res_model">alc_karting.carrera</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar</field>
         </record>
 
         <!-- menus -->
