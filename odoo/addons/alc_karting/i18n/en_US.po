@@ -33,6 +33,13 @@ msgstr "Horsepower"
 #. module: alc_karting
 #: model:ir.model,name:alc_karting.model_alc_karting_carrera
 #: model:ir.ui.menu,name:alc_karting.carrera_menu
+#: model_terms:ir.ui.view,arch_db:alc_karting.carrera_calendar
+msgid "Carrera"
+msgstr "Race"
+
+#. module: alc_karting
+#: model:ir.model,name:alc_karting.model_alc_karting_carrera
+#: model:ir.ui.menu,name:alc_karting.carrera_menu
 #: model_terms:ir.ui.view,arch_db:alc_karting.carrera_form
 #: model_terms:ir.ui.view,arch_db:alc_karting.carrera_tree
 #: model_terms:ir.ui.view,arch_db:alc_karting.competidor_form
