@@ -24,6 +24,10 @@
               <field name="foto" widget="image" class="oe_right oe_avatar" options="{'size':[200,200]}"/>
             </group>
           </sheet>
+          <div class="oe_chatter">
+               <field name="message_follower_ids" groups="base.group_user"/>
+               <field name="message_ids" widget="mail_thread"/>
+           </div>
         </form>
       </field>
     </record>
@@ -42,6 +46,23 @@
           <field name="numero_kart" />
           <field name="foto" widget="image" class="oe_right oe_avatar" options="{'size':[265,300]}"/>
         </tree>
+      </field>
+    </record>
+
+    <record id="alc_karting.competidor_search" model="ir.ui.view">
+      <field name="name">alc_karting.competidor.search</field>
+      <field name="model">alc_karting.competidor</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name" string="Nick"/>
+          <field name="nombre" string="Nombre"/>
+          <field name="apellidos" string="Apellidos"/>
+          <field name="equipo_id" string="Equipo"/>
+          <field name="numero_kart" string="Número del kart"/>
+          <filter name="Novatos" domain="[('num_carreras', '&lt;=', 5)]"/>
+          <filter name="Activos" domain="[('num_carreras', '&gt;', 5),('num_carreras', '&lt;', 30)]"/>
+          <filter name="Experimentados" domain="[('num_carreras', '&gt;=', 30)]"/>
+        </search>
       </field>
     </record>
   </data>

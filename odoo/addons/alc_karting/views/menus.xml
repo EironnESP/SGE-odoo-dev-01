@@ -23,7 +23,7 @@
         <record id="alc_karting.competidor_action" model="ir.actions.act_window">
             <field name="name">Competidores</field>
             <field name="res_model">alc_karting.competidor</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
         </record>
 
         <record id="alc_karting.carrera_action" model="ir.actions.act_window">

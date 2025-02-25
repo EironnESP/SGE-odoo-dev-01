@@ -5,6 +5,7 @@ from odoo import models, fields, api
 class Competidor(models.Model):
     _name = 'alc_karting.competidor'
     _description = 'Competidor'
+    _inherit = 'mail.thread'
     
     name = fields.Char(string='Nick', required=True, help="Introduce el nick del corredor")
     nombre = fields.Char(string='Nombre', required=True, help="Introduce el nombre del corredor")
