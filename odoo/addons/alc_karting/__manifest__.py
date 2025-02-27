@@ -38,4 +38,6 @@ circuito de karting
     ],
     
     'application': True,
+    
+    'license': 'LGPL-3',
 }

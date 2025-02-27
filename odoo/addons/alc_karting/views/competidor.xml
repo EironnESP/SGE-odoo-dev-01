@@ -59,9 +59,12 @@
           <field name="apellidos" string="Apellidos"/>
           <field name="equipo_id" string="Equipo"/>
           <field name="numero_kart" string="Número del kart"/>
-          <filter name="Novatos" domain="[('num_carreras', '&lt;=', 5)]"/>
-          <filter name="Activos" domain="[('num_carreras', '&gt;', 5),('num_carreras', '&lt;', 30)]"/>
-          <filter name="Experimentados" domain="[('num_carreras', '&gt;=', 30)]"/>
+          <filter name="novatos" string="Novatos" domain="[('num_carreras', '&lt;=', 5)]"/>
+          <filter name="activos" string="Activos" domain="[('num_carreras', '&gt;', 5),('num_carreras', '&lt;', 30)]"/>
+          <filter name="experimentados" string="Experimentados" domain="[('num_carreras', '&gt;=', 30)]"/>
+          <group expand="0" string="Group By">
+            <filter name="equipo" string="Equipo" context="{'group_by': 'equipo_id'}"/>
+          </group>
         </search>
       </field>
     </record>
